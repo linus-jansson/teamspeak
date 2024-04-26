@@ -9,7 +9,8 @@ services:
       - 10011:10011
       - 30033:30033
     volumes:
-      - ./data/:/var/ts3server/
+      - ts3:/var/ts3server/
     environment:
       TS3SERVER_LICENSE: accept
       TS3SERVER_PASSWORD: leolinuxcoolagreatpassword
+      TIME_ZONE: Europe/Berlin
